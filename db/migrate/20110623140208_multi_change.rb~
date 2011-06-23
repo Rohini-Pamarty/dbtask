@@ -1,0 +1,14 @@
+class MultiChange < ActiveRecord::Migration
+  def self.up
+	change_table :employees do |t|
+	 
+	 t.change :name, :primary_key
+    end
+  end
+
+  def self.down
+	change_table :employees do |t|
+	t.primary_key :id
+    end
+  end
+end

@@ -1,0 +1,9 @@
+class AddMaritalStatus < ActiveRecord::Migration
+  def self.up
+	add_column :married, :boolean
+  end
+
+  def self.down
+	remove_colum :married
+  end
+end
