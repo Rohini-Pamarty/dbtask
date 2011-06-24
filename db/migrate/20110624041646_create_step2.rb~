@@ -1,0 +1,13 @@
+class CreateStep2 < ActiveRecord::Migration
+  def self.up
+	add_column(:employees,:married, :boolean)
+	add_column(:employees, :salary, :float)
+	
+  end
+
+  def self.down
+	remove_column(:employees, :married)
+	remove_column(:employees, :salary)
+	
+  end
+end

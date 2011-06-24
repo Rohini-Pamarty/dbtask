@@ -4,6 +4,6 @@ class AddSalary < ActiveRecord::Migration
   end
 
   def self.down
-	remove_column(:employee, :salary)
+	remove_column(:employees, :salary)
   end
 end

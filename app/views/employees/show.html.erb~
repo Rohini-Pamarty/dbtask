@@ -6,10 +6,13 @@
 </p>
 
 <p>
-  <b>Description:</b>
-  <%= @employee.description %>
+  <b>Married:</b>
+  <%= @employee.status %>
 </p>
-
+<p>
+  <b>Date of Birth:</b>
+  <%= @employee.dob %>
+</p>
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
 <%= link_to 'Back', employees_path %>

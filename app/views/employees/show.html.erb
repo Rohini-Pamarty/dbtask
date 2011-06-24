@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <b>SSN:</b>
+  <%= @employee.ssn_id %>
+</p>
 <p>
   <b>Name:</b>
   <%= @employee.name %>
@@ -7,11 +10,15 @@
 
 <p>
   <b>Married:</b>
-  <%= @employee.married %>
+  <%= @employee.status %>
 </p>
 <p>
-  <b>Description:</b>
-  <%= @employee.description %>
+  <b>Date of Birth:</b>
+  <%= @employee.dob %>
+</p>
+<p>
+  <b>Salary:</b>
+  <%= @employee.salary %>
 </p>
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
